@@ -68,10 +68,27 @@ form.addEventListener('submit', function(e) {
     
   checkRequired([username, email, password, password2]);
   checkLength(username, 4, 16);
-  checkLength(password, 8, 22)
+  checkLength(password, 4, 16)
   checkEmail(email);
   checkPasswordsMatch(password, password2);
 })
+
+
+// var data = new FormData();
+// data.append('user', 'username');
+// data.append('email', 'email');
+// data.append('password', 'password');
+// data.append('password2', 'password2');
+
+// var xhr = new XMLHttpRequest();
+// xhr.open('POST', 'somewhere', true);
+// xhr.onload = function () {
+//     // do something to response
+//     console.log(this.responseText);
+// };
+// xhr.send(data);
+
+
 
 
 
